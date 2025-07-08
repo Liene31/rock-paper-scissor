@@ -15,7 +15,16 @@
 //---Need to detected which option is clicked
 //---Implement game logic
 
+const options = document.querySelectorAll("#options > div");
+
 function handleClickes() {}
 function determinTheWinner() {}
 function gameLogic() {}
 function displayMatchOutcome() {}
+
+//Handles clicks and determines which option was clicked
+options.forEach((option) => {
+  option.addEventListener("click", (e) => {
+    console.log(e.currentTarget.id);
+  });
+});
