@@ -29,8 +29,5 @@ img {
   display: flex;
   align-items: flex-end;
   gap: 2.5em;
+  text-align: center;
 }
-
-/* .opt {
-  margin-left: 5px;
-} */
