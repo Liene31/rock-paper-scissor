@@ -11,18 +11,20 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 450px;
+  max-width: 200px;
   margin: 0 auto;
+}
+
+.game-play {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
 h1 {
   font-weight: normal;
   font-size: 1.5rem;
-  padding: 1.25em 0;
-}
-
-img {
-  width: 30px;
+  padding: 1em 0;
 }
 
 .options {
@@ -30,4 +32,22 @@ img {
   align-items: flex-end;
   gap: 2.5em;
   text-align: center;
+}
+
+/* Images */
+
+.game-play img {
+  width: 60px;
+}
+
+.rock-left {
+  transform: rotate(90deg);
+}
+
+.rock-right {
+  transform: rotate(270deg) scaleX(-1);
+}
+
+.options img {
+  width: 30px;
 }
