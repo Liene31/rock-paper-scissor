@@ -16,15 +16,22 @@
 //---Implement game logic
 
 const options = document.querySelectorAll("#options > div");
+const gameMessage = document.getElementById("game-message");
 
-function handleClickes() {}
 function determinTheWinner() {}
 function gameLogic() {}
-function displayMatchOutcome() {}
+function displayGameMessage() {
+  //if any clicked change to Wait
+  //Afterwards determins which one was clicked and display the image
+}
 
 //Handles clicks and determines which option was clicked
 options.forEach((option) => {
   option.addEventListener("click", (e) => {
-    console.log(e.currentTarget.id);
+    const optionId = e.currentTarget.id;
+
+    if (optionId === "rock" || optionId === "paper" || optionId === "scissor") {
+      gameMessage.innerHTML = `<h1>Wait...</h1>`;
+    }
   });
 });
